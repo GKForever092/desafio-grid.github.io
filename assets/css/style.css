@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+}
+
+main{
+    display: flex;
+}
+
+main .aside-bar{
+    background-color: gainsboro;
+    width: 250px;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+main .aside-bar ul{
+    list-style: none;
+}
