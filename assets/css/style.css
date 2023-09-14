@@ -3,29 +3,67 @@
     padding: 0;
 }
 
+/* Header */
+
 header{
+    grid-area: header;
     background-color: cornflowerblue;
     color: white;
     text-align: center;
     padding: 12px;
 }
 
+/* footer */
+
 footer{
+    grid-area: footer;
     text-align: center;
     padding: 15px;
 }
 
-main{
-    display: flex;
-}
+/* Aside-bar */
 
-main .aside-bar{
+.aside-bar{
+    grid-area: aside-bar;
     background-color: gainsboro;
     width: 250px;
     min-height: 100vh;
     padding: 25px;
 }
 
-main .aside-bar ul{
+.aside-bar ul{
     list-style: none;
+}
+
+/* Grillas */
+
+.grilla{
+    grid-area: grilla;
+}
+
+.grilla .card{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.grilla .card img{
+    width: 200px;
+}
+
+/* Grid-container */
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "aside-bar grilla"
+    "footer footer";
+    gap: 10px;
+}
+
+.grid-container .grilla{
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
